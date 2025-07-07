@@ -1,0 +1,192 @@
+* {
+    font-family: "Roboto", sans-serif;
+}
+
+h1{
+    margin-left:  10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #686144;
+}
+
+h2{
+    text-align: center;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #686144;
+}
+
+p {
+    margin: 2rem;
+    text-align: center;
+}
+
+/* -------- Header --------- */
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    align-items: end;
+    border-bottom: solid 2px #857a52;
+    column-gap: 8px;
+}
+
+header img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+header span{
+    font-size: 1.2rem;
+    color: #686144;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+/* -------- Hamburger --------- */
+
+.hamburger {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #686144;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/* -------- Navigation --------- */
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation a {
+    display: block;
+    padding: 1rem 10px;
+    color: #3c3518;
+    text-decoration: none;
+    border-bottom: solid 1px #ddd;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navigation li.current {
+    background-color: #d4cfbb;
+    font-weight: 600;
+}
+
+.navigation a:hover {
+    background-color: #686144;
+    color: #ddd
+}
+
+/* -------- student photo --------- */
+
+.photo img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* -------- courses card --------- */
+
+.courses {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+}
+
+.course-card {
+    padding: 15px;
+    margin: 10px;
+    border-radius: 8px;
+    width: 300px;
+}
+
+.completed {
+    background-color: #d4cfbb;
+}
+
+.not-completed {
+    background-color: #cdbc7c;
+    color: #000000;
+}
+
+/* -------- button --------- */
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px
+}
+
+.btn {
+    background-color: #594b15;
+    justify-content: center;
+    border-radius: 2rem;
+    border-style: none;
+    padding: 15px 20px;
+    width: 30%;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    color: #fffffe;
+    font-weight: 600;
+}
+
+button:hover {
+    background-color: #d4cfbb;
+    color:#38352a
+}
+
+/* -------- Footer --------- */
+
+footer {
+    background-color: #d4cfbb;
+    padding: 1rem 10px;
+    text-align: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+    
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 22px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.social img {
+    width: 22px;
+    height: 22px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}

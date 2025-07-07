@@ -4,9 +4,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/dates.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
-    
+    <header>  
+        <img src="images/house.svg" alt="site logo" width="1" height="1">
+    <span>The Site Name</span>
+    <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="#">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Proyect</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <div class="first-section">
+            <section class="about-me">
+                <h2>About Me</h2>
+                <p>My name is Javiera Lorca, I am 23 years old, I currently do not have a job but I am looking for one, I like to listen to music and I am a member of the Church of Jesus Christ of Latter-day Saints, there I support children and elementary school presidencies to strengthen them and provide service to them in case they need it, I also study software development, where I have learned to use languages ​​​​such as Python, HTML, CSS, C #, Git, etc. These lessons have changed my life and have helped me see programming with different eyes, I want to be able to continue learning about programming so that one day I can apply my learnings in a good job and be an asset to the company I work for.</p>
+            </section>
+            <section class="photo">
+                <h2>Student Photo</h2>
+                <img src="images/student-photo.jpg" alt="my photo" width="200">
+            </section>
+        </div>
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <div class="filter-buttons">
+                <button id="all-button" class="btn" aria-label="All">All</button>
+                <button id="cse-button" class="btn" aria-label="CSE">CSE</button>
+                <button id="wdd-button" class="btn" aria-label="WDD">WDD</button>
+            </div>
+            <div id="courses" class="courses"></div>
+            <p id="credit-count">The total credits for course listed above is 0</p>
+        </section>
+    </main>
+    <footer>
+        <div class="social">
+            <a href="https://github.com/javiera-MLJ" target="_blank"><img src="images/github.svg" alt="github" width="16" height="16"></a>
+            <a href="https://www.linkedin.com/in/javiera-lorca-jimenez-7051232a0?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BHw%2Bf1e6wSn%2BEYfapqUAcow%3D%3D" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="https://open.spotify.com/user/314ftiqrm6ja67kmww7hebxba6su?si=a7bff8f77ed44a22" target="_blank"><img src="images/spotify.svg" alt="spotify" width="16" height="16"></a>
+        </div>
+        <p>© <span id="currentyear"></span> 🍪 Javiera Millarai Lorca Jimenez 🍪 Puerto Montt - Chile</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
