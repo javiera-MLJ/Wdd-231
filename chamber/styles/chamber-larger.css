@@ -1,0 +1,88 @@
+@media only screen and (min-width: 38rem){
+    header, main, nav, footer{
+        margin: 0;
+    }
+    
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    header img {
+    width: 100%;
+    max-width: 70px;
+    height: auto;
+    object-fit: contain;
+}
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+        position: static;
+        width: auto;
+        max-width: none;
+        padding: 0;
+        box-shadow: none;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+
+    .navigation a {
+        padding: 1.5rem 1rem;
+        border: none;
+    }
+
+    .grid {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    .list section {
+        display: grid;
+		grid-template-columns: 2fr 1fr 1fr;
+		padding: 10px;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between; 
+        align-items: flex-start; 
+        gap: 40px; 
+        padding: 40px 60px;
+        font-family: Arial, sans-serif;
+    }
+
+    .contact-info,
+    .social,
+    .personal-info {
+        flex: 1 1 30%; 
+        min-width: 250px; 
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-info p,
+    .social p,
+    .personal-info p {
+        margin-bottom: 10px;
+    }
+
+    .social {
+        flex-direction: row;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .menu button {
+            padding: 1rem 5rem;
+        }
+
+}
