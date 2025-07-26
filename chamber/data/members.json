@@ -4,7 +4,7 @@
             "name": "Cermaq Chile S.A.",
             "address": "Diego Portales 2000, Floor 10, Puerto Montt.",
             "phone_number": "(56) 652563250",
-            "membership": "gold",
+            "membership": "Gold",
             "membership_since":2005,
             "URL": "https://www.cermaq.cl/",
             "image": "images/cermaq-logo.svg"
@@ -14,7 +14,7 @@
             "name": "Cooperativa Agrícola y lechera de la unión",
             "address": "Esmeralda 641, La Unión",
             "phone_number": "600 0060 030",
-            "membership": "silver",
+            "membership": "Gold",
             "membership_since":2017,
             "URL": "https://www.colun.cl",
             "image": "images/colun.png"
@@ -24,7 +24,7 @@
             "name": "Terra Magik",
             "address": "To Lican Ray - Villarica Street, Km 2.0, Araucanía",
             "phone_number": "(56) 9 6208 6440",
-            "membership": "member",
+            "membership": "Member",
             "membership_since":2021,
             "URL": "https://www.terramagik.cl/",
             "image": "images/terramagik.png"
@@ -34,9 +34,9 @@
             "name": "ROV Service Chile",
             "address": "Carretera Austral km 17.5, Pto. montt",
             "phone_number": "(56) 9 9195 3569",
-            "membership": "member",
+            "membership": "Member",
             "membership_since":2024,
-            "URL": "www.rovservice.cl",
+            "URL": "https://www.rovservice.cl",
             "image": "images/rovservice-logo.png"
         },
 
@@ -44,7 +44,7 @@
             "name": "Fluctus AS",
             "address": "Kolbeinsvik 109, 5394 KOLBEINSVIK, Norway",
             "phone_number": "(47) 56 12 31 34",
-            "membership": "gold",
+            "membership": "Gold",
             "membership_since":2013,
             "URL": "https://fluctus.no/es",
             "image": "images/fluctus.svg"
@@ -54,7 +54,7 @@
             "name": "Centro Náutico Chiloé",
             "address": "Casilla 285 - Castro - Chiloé",
             "phone_number": "(56) 9 94197123",
-            "membership": "silver",
+            "membership": "Silver",
             "membership_since":2020,
             "URL": "https://centronauticochiloe.cl/",
             "image": "images/CentroNauticoChiloe.png"
@@ -64,7 +64,7 @@
             "name": "Niva Chile",
             "address": "Business Center La Laja, U4. Puerto Varas, Chile.",
             "phone_number": "(56) 9 57731632",
-            "membership": "silver",
+            "membership": "Silver",
             "membership_since":2021,
             "URL": "https://nivachile.cl/",
             "image": "images/Niva-Logo.png"
@@ -74,7 +74,7 @@
             "name": "Badamax | Ferouch",
             "address": "Lincoyán 9825, Quilicura, Santiago",
             "phone_number": "(56) 9 8768 8710",
-            "membership": "gold",
+            "membership": "Gold",
             "membership_since":2013,
             "URL": "https://www.ferouch.cl/",
             "image": "images/ferouch-logo.png"
@@ -84,7 +84,7 @@
             "name": "ITG Chile S.A.",
             "address": "Office 5 – Industrial Park Los Volcanes Parcel 4",
             "phone_number": "(65) 2252881",
-            "membership": "member",
+            "membership": "Member",
             "membership_since":2023,
             "URL": "https://www.itgchile.com/",
             "image": "images/itg-logo.png"

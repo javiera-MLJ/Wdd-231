@@ -11,9 +11,17 @@ html, body {
 }
 
 h1{
-    margin-left:  10px;
+    margin-left: 10px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #1e757d;
+    font-size: 1.5rem;
+}
+
+section h1,
+article h1,
+aside h1,
+nav h1 {
+    font-size: 1.5rem;
 }
 
 h2{
@@ -21,6 +29,7 @@ h2{
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #1e757d;
 }
+
 
 p {
     text-align: center;
@@ -84,6 +93,7 @@ header span{
 
 .navigation.show {
     display: block;
+    background-color: #fffbf8;
 }
 .navigation ul {
     list-style-type: none;
@@ -127,7 +137,7 @@ section > p {
 img {
 	width: auto;
 	max-width: 325px;
-	height: 200px;
+	height: 75px;
 }
 
 .menu {
@@ -218,7 +228,7 @@ h3 {
 		}
 
 		&:nth-child(even) {
-			background-color: #e6eff0;;
+			background-color: #e6eff0;
 		}
 
         p{
@@ -226,11 +236,6 @@ h3 {
         }
 
 	}
-}
-
-img {
-	width: auto;
-	height: 75px;
 }
 
 
@@ -266,4 +271,178 @@ footer {
 
 .social a:hover {
     background-color: #ddd;
+}
+
+/* -------- Hero --------- */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 1rem;
+    gap: 1.5rem;
+}
+
+.hero-text {
+    width: 100%;
+    max-width: 100%;
+    padding-top: 1rem;
+    text-align: center;
+}
+
+.hero-image {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.hero-image img {
+    max-width: 100%;
+    height: auto;
+    transform: none;
+}
+
+.hero h1 {
+    font-size: 2rem;
+}
+
+.hero p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.join {
+    background-color: #1e757d;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem 3rem;
+    color: #ffffff;
+    font-size: larger;
+    margin: 0.5rem;
+}
+
+/* -------- weather --------- */
+
+.weather-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.weather img {
+    width: 150px !important;
+    height: 150px !important;
+}
+
+.weather-icon {
+    margin: 0;
+    padding: 0;
+}
+
+.weather-info p {
+    margin: 0.25rem 0;
+    font-size: 1rem;
+}
+.weather-wrapper {
+    display: flex;
+    gap: 2rem;
+    margin: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+}
+
+.weather,
+.forecast {
+    padding: 1rem;
+    border-radius: 10px;
+    background-color: #e6eff0;
+    width: 80%;
+}
+
+#forecast-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.forecast-day {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.forecast-day img {
+    width: 100px;
+    height: 100px;
+    flex-shrink: 0;
+}
+
+.forecast-day h3 {
+    color: #1e757d;
+    font-size: 1.2rem;
+}
+
+/* -------- member cards --------- */
+.spotlights {
+    background-color: #ffffff;
+}
+.members-card {
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1.5rem 1.5rem;
+    max-width: 90%;
+    background-color: #fbf4ec;
+    text-align: center;
+}
+
+.members-card h2 {
+    font-size: 1.4rem;
+    margin-bottom: 0.25rem;
+}
+
+.members-card h3 {
+    font-size: 1rem;
+    margin-top: 0;
+    color: #555;
+    font-weight: normal;
+}
+
+.member-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 1rem;
+    gap: 0.5rem;
+}
+
+.member-content img {
+    max-width: 100%;
+    width: 120px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.member-content .info {
+    width: 100%;
+    text-align: left;
+}
+
+/* -------- events --------- */
+.events {
+    background-color: #ffffff;
+}
+.events-card{
+    margin: 0 1rem;
+    padding: 0.5rem;
+    max-width: 90%;
+    background-color: #fbf4ec;
+    text-align: center;
 }

@@ -1,0 +1,19 @@
+{
+    "events": [
+    {
+        "date": "2025-08-10",
+        "title": "Summer Networking Meetup",
+        "description": "An informal gathering for local business owners to connect and discuss opportunities for collaboration."
+    },
+    {
+        "date": "2025-09-05",
+        "title": "Digital Marketing Workshop",
+        "description": "A hands-on workshop focused on social media strategies, SEO techniques, and email marketing."
+    },
+    {
+        "date": "2025-10-20",
+        "title": "Fall Business Expo",
+        "description": "Annual exhibition featuring local businesses, products, and services, open to the public and potential partners."
+    }
+    ]
+}

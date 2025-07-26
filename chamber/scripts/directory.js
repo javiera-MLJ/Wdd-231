@@ -1,9 +1,10 @@
-const navButton = document.querySelector('#nav-button');
-const navlinks = document.querySelector('#nav-bar');
+import { setupNavigation } from './navigation.mjs';
+import { updateCurrentYear, updateLastModified } from './utils.mjs';
 
-navButton.addEventListener('click', () => {
-    navButton.classList.toggle('show');
-    navlinks.classList.toggle('show');
+document.addEventListener('DOMContentLoaded', () => {
+    setupNavigation();
+    updateCurrentYear();
+    updateLastModified();
 });
 
 const directory = 'data/members.json';
@@ -89,7 +90,6 @@ window.addEventListener("DOMContentLoaded", () => {
         display.classList.remove("grid");
     }
 
-    // Opcional: detectar cambio de tamaño de pantalla
     window.addEventListener("resize", () => {
         if (window.matchMedia("(min-width: 768px)").matches) {
             display.classList.add("grid");
@@ -102,10 +102,3 @@ window.addEventListener("DOMContentLoaded", () => {
 });
 
 getMembersData();
-
-const currentyear = new Date().getFullYear();
-document.getElementById("currentyear").textContent = currentyear;
-
-    const lastModifiedDate = new Date(document.lastModified);
-    const formattedDate = lastModifiedDate.toLocaleString();
-    document.getElementById("lastModified").textContent = `Last Modified: ${formattedDate}`;
