@@ -34,7 +34,7 @@
             "name": "ROV Service Chile",
             "address": "Carretera Austral km 17.5, Pto. montt",
             "phone_number": "(56) 9 9195 3569",
-            "membership": "Member",
+            "membership": "Silver",
             "membership_since":2024,
             "URL": "https://www.rovservice.cl",
             "image": "images/rovservice-logo.png"
@@ -74,7 +74,7 @@
             "name": "Badamax | Ferouch",
             "address": "Lincoyán 9825, Quilicura, Santiago",
             "phone_number": "(56) 9 8768 8710",
-            "membership": "Gold",
+            "membership": "Member",
             "membership_since":2013,
             "URL": "https://www.ferouch.cl/",
             "image": "images/ferouch-logo.png"
