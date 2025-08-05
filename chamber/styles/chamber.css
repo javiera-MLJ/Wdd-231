@@ -11,10 +11,10 @@ html, body {
 }
 
 h1{
-    margin-left: 10px;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #1e757d;
     font-size: 1.5rem;
+    margin: 1.5rem;
 }
 
 section h1,
@@ -446,3 +446,149 @@ footer {
     background-color: #fbf4ec;
     text-align: center;
 }
+
+/* -------- form --------- */
+
+form {
+    max-width: 600px;
+    margin: .5rem auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+form label {
+    display: block;
+    font-size: .8rem;
+    color: #1e757d;
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+    color: #1e757d;
+    border-bottom: 1px solid #eee;
+    }
+
+
+form input[type=text],
+form input[type=tel],
+form input[type=date],
+form input[type=email],
+form select,
+form textarea {
+    padding: 0.5rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+input:invalid,
+select:invalid,
+textarea:invalid {
+    background-color: #faebeb;
+}
+
+input:required:valid,
+select:required:valid,
+textarea:required:valid {
+    border: 2px solid #1e757d;
+}
+
+form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+form input[type=submit] {
+    align-self: start;
+    border: none;
+    text-align: center;
+    background-color: #1e757d;
+    color: white;
+    border-radius: 1rem;
+    padding: .75rem 1.5rem;
+    margin: 2rem 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type=submit]:hover {
+    background-color: #155e68;
+}
+
+#results {
+    background-color: #fbf4ec;
+    padding: 1rem 4rem;
+    margin: 2rem 8rem;
+    border-radius: 6px;
+}
+
+.membership-info {
+    padding: 1rem;
+}
+
+.membership-info h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #1e757d;
+}
+
+.membership-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.membership-card {
+    border: 1px solid #ccc;
+    padding: 2rem 4rem;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    animation: fadeColor 5s ease-in-out forwards;
+    text-align: center;
+}
+
+@keyframes fadeColor {
+    0% {
+        background-color: #ffffff;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    100% {
+        background-color: #e6eff0;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+}
+
+#membership-details {
+    padding: 2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+    max-width: 500px;
+}
+
+dialog::backdrop {
+    background: rgba(0,0,0,0.5);
+}
+
+.learn-more {
+    background-color: #1e757d;
+    border: none;
+    border-radius: 10px;
+    padding: .5rem 4rem;
+    color: #ffffff;
+    font-size: larger;
+    margin: 0.5rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+    button:hover{
+        background-color: #0d929e;
+        color:#fbf4ec;
+    }
+
+

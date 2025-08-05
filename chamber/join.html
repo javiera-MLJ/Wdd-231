@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="Undertake together">
+    <meta name="description" content="This page is a simulation of a Chamber of Commerce to be able to enter and improve details in HTML, CSS and JavaScript, a project from course WDD231 by Javiera Lorca.">
+    <meta property="og:description" content="Association dedicated to making your business visible and promoting it, participating in training, activities, etc.">
+    <meta property="og:url" content="https://javiera-mlj.github.io/Wdd-231/chamber/directory.html">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:image" content="images/undertake-together.png" alt="undertake-together"/>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Undertake together">
+    <link rel="icon" href="images/UT-icon.ico">
+    <link rel="stylesheet" href="styles/chamber.css">
+    <link rel="stylesheet" href="styles/chamber-larger.css">
+    <script type="module" src="scripts/join.js"></script>
+    <title>undertake together</title>
+</head>
+<body>
+    <header>  
+        <img src="images/UT-logo.png" alt="site logo">
+    <span>Undertake Together Chamber Comerce</span>
+    <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+    </header>
+    <main>
+        <h1>Temple Appointment</h1>
+        <section class="form-page">
+
+            <form method="GET" action="thankyou.html" class="designOne">
+                <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
+                <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
+                <label>Organizational Title<input type="text" id="organization-title" name="title" title="Please enter a title with at least 7 letters. Only letters, hyphens, and spaces are allowed." autocomplete="organization-title" pattern="^[A-Za-z\s\-]{7,}$" required></label>
+                <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
+                <label>Cell Phone <input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
+                <label>Business/ Organization's Name <input type="text" name="organization" required autocomplete="organization-name" title="Your organization's Name"></label>
+
+                <label>Membership Level
+                    <select name="Membership" required>
+                        <option value="">None</option>
+                        <option value="NP">Non Profit</option>
+                        <option value="Bronze">Bronze</option>
+                        <option value="Silver">Silver</option>
+                        <option value="Gold">Gold</option>
+                    </select>
+                </label>
+
+                <label for="organization-description">Organization Description<textarea id="organization-description" name="organization-description" type="text" title="Please describe the business or organization" rows="4" cols="75"></textarea></label>
+
+                <input type="hidden" name="timestamp" id="form-timestamp">
+
+                <input type="submit" value="Schedule An Appointment">
+            </form>
+            <section class="membership-info">
+                <h2>Membership Levels</h2>
+                <div class="membership-grid">
+                    <div class="membership-card nonprofit" data-index="0">
+                        <h3>Non Profit Membership Level</h3>
+                        <button class="learn-more">Learn More</button>
+                    </div>
+                    <div class="membership-card bronze" data-index="1">
+                        <h3>Bronze Membership Level</h3>
+                        <button class="learn-more">Learn More</button>
+                    </div>
+                    <div class="membership-card silver" data-index="2">
+                        <h3>Silver Membership Level</h3>
+                        <button class="learn-more">Learn More</button>
+                    </div>
+                    <div class="membership-card gold" data-index="3">
+                        <h3>Gold Membership Level</h3>
+                        <button class="learn-more">Learn More</button>
+                    </div>
+                    <dialog id="membership-details"></dialog>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="contact-info">
+            <p><strong>Undertake Together Chamber of Commerce</strong></p>
+            <p>302 Ecuador Street</p>
+            <p>Puerto Lara, Chile</p>
+            <p>info@undertaketogether.org</p>
+            <p>(56) 6534 2699</p>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+            <a href="https://www.linkedin.com" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg" alt="Instagram" width="16" height="16"></a>
+        </div>
+        <div class="personal-info">
+            <p>WDD231 Class Proyect</p>
+            <p>Javiera Lorca</p>
+            <p>© <span id="currentyear"></span> Undertake Together chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

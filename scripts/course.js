@@ -105,6 +105,10 @@ function show(coursesToShow = courses) {
             div.textContent = `${course.subject}: ${course.number} ✕`;
         }
 
+        div.addEventListener("click", () => {
+            displayCourseDetails(course);
+        });
+
         container.appendChild(div);
     });
     updateCreditCount(coursesToShow);
@@ -138,3 +142,23 @@ function filterCourses(type) {
 window.onload = () => {
     show();
 };
+
+const courseDetails = document.querySelector("#course-details");
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+        <button id="closeModal">✕</button>
+        <h1>${course.subject} ${course.number}</h2>
+        <h2>${course.title}</h2>
+        <p><strong>Credits</strong>: ${course.credits}</p>
+        <p><strong>Certificate</strong>: ${course.certificate}</p>
+        <p>${course.description}</p>
+        <p><strong>Technologies</strong>: ${course.technology.join(', ')}</p>
+    `;
+    courseDetails.showModal();
+    
+    closeModal.addEventListener("click", () => {
+        courseDetails.close();
+    });
+}
