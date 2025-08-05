@@ -487,12 +487,12 @@ form textarea {
 input:invalid,
 select:invalid,
 textarea:invalid {
-    background-color: #faebeb;
+    border: 2px solid #db9191 !important;
 }
 
-input:required:valid,
-select:required:valid,
-textarea:required:valid {
+input:required,
+select:required,
+textarea:required {
     border: 2px solid #1e757d;
 }
 
