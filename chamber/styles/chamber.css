@@ -157,8 +157,8 @@ img {
 }
 
 .menu button:hover{
-        background-color: #1e757d;
-        color:#fbf4ec;
+    background-color: #1e757d;
+    color:#fbf4ec;
 }
 
 section {
@@ -170,13 +170,13 @@ section {
 }
 
 section a {
-		font-family: Arial, sans-serif;
-		font-size: 0.85rem;
-		color: #1e757d;
+	font-family: Arial, sans-serif;
+	font-size: 0.85rem;
+	color: #1e757d;
 	}
 
 section h3 {
-		font-size: 1.5rem;
+	font-size: 1.5rem;
 }
 
 .grid {
@@ -193,14 +193,11 @@ section h3 {
     border-radius: 20px;
 }
 .grid section > * {
-		margin: 0.1rem;
-}
-.grid p{
-        margin-bottom: 5px;
+	margin: 0.1rem;
 }
 
-.grid h3 {
-	font-size: 1.2rem;
+.grid p{
+    margin-bottom: 5px;
 }
 
 .list {
