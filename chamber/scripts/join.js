@@ -1,3 +1,12 @@
+import { setupNavigation } from './navigation.mjs';
+import { updateCurrentYear, updateLastModified } from './utils.mjs';
+
+document.addEventListener('DOMContentLoaded', () => {
+    setupNavigation();
+    updateCurrentYear();
+    updateLastModified();
+});
+
 const membership = [
     {
         title: 'Non-Profit Membership Benefits',
