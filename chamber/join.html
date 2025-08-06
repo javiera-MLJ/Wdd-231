@@ -1,16 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta property="og:title" content="Undertake together">
     <meta name="description" content="This page is a simulation of a Chamber of Commerce to be able to enter and improve details in HTML, CSS and JavaScript, a project from course WDD231 by Javiera Lorca.">
+    <meta name="author" content="Javiera Lorca"/>
     <meta property="og:description" content="Association dedicated to making your business visible and promoting it, participating in training, activities, etc.">
-    <meta property="og:url" content="https://javiera-mlj.github.io/Wdd-231/chamber/directory.html">
-    <meta property="og:locale" content="en_US">
-    <meta property="og:image" content="images/undertake-together.png" alt="undertake-together"/>
+    <meta property="og:url" content="https://javiera-mlj.github.io/wdd231/chamber/join.html">
+    <meta property="og:locale" content="en_US"/>
+    <meta property="og:image" content="images/undertake-together.png"/>
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="Undertake together">
-    <link rel="icon" href="images/UT-icon.ico">
+    <meta property="og:site_name" content="Undertake together Chamber of Commerce Join Page">
+    <link rel="icon" href="images/ut-icon.ico">
     <link rel="stylesheet" href="styles/chamber.css">
     <link rel="stylesheet" href="styles/chamber-larger.css">
     <script type="module" src="scripts/join.js"></script>
@@ -18,7 +19,7 @@
 </head>
 <body>
     <header>  
-        <img src="images/UT-logo.png" alt="site logo">
+        <img src="images/ut-logo.png" alt="site logo">
     <span>Undertake Together Chamber Comerce</span>
     <button id="nav-button" class="hamburger" aria-label="navigation"></button>
     <nav id="nav-bar" class="navigation">
@@ -32,15 +33,14 @@
     </header>
     <main>
         <h1>Membership Registration</h1>
-        <section class="form-page">
-
+        <div class="form-page">
             <form method="GET" action="thankyou.html" class="designOne">
                 <label>First Name <input type="text" name="first" required autocomplete="given-name" title="Your First Name"></label>
                 <label>Last Name <input type="text" name="last" required autocomplete="family-name" title="Your Last Name"></label>
                 <label>Organizational Title<input type="text" id="organization-title" name="title" title="Please enter a title with at least 7 letters. Only letters, hyphens, and spaces are allowed." autocomplete="organization-title" pattern="^[A-Za-z\s\-]{7,}$" required></label>
                 <label>Email <input type="email" name="email" required placeholder="john89@gmail.com"  title="Your Email" autocomplete="email"></label>
                 <label>Cell Phone <input type="tel" name="phone" required autocomplete="tel" title="A Phone Number with dashes" placeholder="987-555-1234" ></label>
-                <label>Business/ Organization's Name <input type="text" name="organization" required autocomplete="organization-name" title="Your organization's Name"></label>
+                <label>Business/ Organization's Name <input type="text" name="organization" required autocomplete="organization" title="Your organization's Name"></label>
 
                 <label>Membership Level
                     <select name="Membership" required>
@@ -52,7 +52,7 @@
                     </select>
                 </label>
 
-                <label for="organization-description">Organization Description<textarea id="organization-description" name="organization-description" type="text" title="Please describe the business or organization" rows="4" cols="75"></textarea></label>
+                <label for="organization-description">Organization Description<textarea id="organization-description" name="organization-description" title="Please describe the business or organization" rows="4" cols="75"></textarea></label>
 
                 <input type="hidden" name="timestamp" id="form-timestamp">
 
@@ -80,7 +80,7 @@
                     <dialog id="membership-details"></dialog>
                 </div>
             </section>
-        </section>
+        </div>
     </main>
     <footer>
         <div class="contact-info">
