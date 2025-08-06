@@ -141,7 +141,7 @@
     .weather img {
     width: 250px !important;
     height: 250px !important;
-}
+    }
 
     .weather-info {
         display: flex;
@@ -201,6 +201,5 @@
 
     .learn-more {
         padding: 1rem 4rem;
-
+    }
 }
-
