@@ -446,6 +446,10 @@ footer {
 
 /* -------- form --------- */
 
+
+.form-page{
+    background-color: #fbf4ec;
+}
 form {
     max-width: 600px;
     margin: .5rem auto;
