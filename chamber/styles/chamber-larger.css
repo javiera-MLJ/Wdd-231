@@ -1,4 +1,17 @@
 @media only screen and (min-width: 38rem){
+    .place-card {
+        grid-template-areas:
+            "figure name"
+            "figure description"
+            "figure address"
+            "figure button";
+        grid-template-columns: 1fr 2fr;
+        gap: 1.5rem;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 64rem){
     header, main, nav, footer{
         margin: 0;
     }
@@ -201,5 +214,19 @@
 
     .learn-more {
         padding: 1rem 4rem;
+    }
+
+    #places {
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .place-figure {
+        border-radius: 8px;
+        transition: filter 0.3s ease;
+    }
+
+    .place-figure:hover {
+        filter: brightness(1.2) contrast(0.7);
     }
 }

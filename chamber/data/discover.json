@@ -1,52 +1,52 @@
 {
-    "companies":[
+    "discover":[
         {
             "name": "Cove Angelmó",
             "address": "downtown Puerto Montt, The Lakes.",
             "description": "It is a famous coastal area known for its craft market, its shipping port and its rich culinary tradition, especially seafood.",
-            "image": "images/cermaq-logo.svg"
+            "image": "images/angelmo.webp"
         },
 
         {
             "name": "Petrohué River Falls",
             "address": "50 kilometers from Puerto Varas",
             "description": "In practice, this small town serves as a connecting point for tourists who come to explore Vicente Pérez Rosales National Park. It gets its name from the Mapudungun pItro-we, place of mosquitoes (Simulium varipes), water insect.",
-            "image": "images/cermaq-logo.svg"
+            "image": "images/petrohue.webp"
         },
 
         {
             "name": "Osorno Volcano",
             "address": "Andes mountain range, east of Lake Llanquihue.",
             "description": "The Osorno Volcano is a stratovolcano in southern Chile. It is known worldwide for the landscapes it offers as the gateway to Chilean Patagonia, and is the most recognizable natural visual icon of the Lake District.",
-            "image": "images/cermaq-logo.svg"
+            "image": "images/osorno-volcano.webp"
         },
 
         {
             "name": "Coarse Sand Beach",
             "address": "Coarse Sand, Ancud, The Lakes",
             "description": "It is a sandy beach located in a small cove, approximately 1 km north of the Plaza de Armas. It is characterized as the most “developed” beach in Ancud, with concrete stairs and easily accessible viewpoints offering views of the rocky surroundings and surrounding vegetation.",
-            "image": "images/cermaq-logo.svg"
+            "image": "images/coarse-sand.webp"
         },
         
         {
             "name": "lake theater",
             "address": "on the shore of Lake Llanquihue, in the municipality of Frutillar, The Lakes Region.",
             "description": "It stands out as one of the most important cultural centers in South America and the southernmost international theater in the world.",
-            "image": "images/cermaq-logo.svg"
+            "image": "images/lake-theater.webp"
         },
 
         {
             "name": "marble cathedral",
             "address": "the western shore of Lake General Carrera, Aysén Region",
             "description": "The Marble Chapel nature sanctuary is a national monument in Chile, consisting of a group of calcium carbonate mineral formations.",
-            "image": "images/cermaq-logo.svg"
+            "image": "images/marble-cathedral.webp"
         },
 
         {
             "name": "Towers of Paine National Park",
             "address": "Magallanes and Chilean Antarctica Region, Torres del Paine municipality, Última Esperanza province.",
             "description": "It is known for its high mountains, bright blue icebergs clinging to glaciers, and golden pampas (grasslands) that are home to rare wildlife such as guanacos. Some of the most iconic sites are the three granite towers that give the park its name and the horn-shaped peaks called Cuernos del Paine.",
-            "image": "images/cermaq-logo.svg"
+            "image": "images/towers-of-paine.webp "
         }
     ]
 }
