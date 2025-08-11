@@ -8,6 +8,12 @@
         grid-template-columns: 1fr 2fr;
         gap: 1.5rem;
         align-items: center;
+        max-width: 700px;
+    }
+
+    .place-img {
+        width: 300px;    
+        height: auto;
     }
 }
 
@@ -200,12 +206,12 @@
     }
 
     .form-page{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     form {
-    margin: 2rem auto;
+        margin: 2rem auto;
     }
 
     .membership-card {
@@ -225,6 +231,7 @@
         border-radius: 8px;
         transition: filter 0.3s ease;
     }
+
 
     .place-figure:hover {
         filter: brightness(1.2) contrast(0.7);

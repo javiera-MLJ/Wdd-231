@@ -601,7 +601,6 @@ button:hover{
 }
 
 .place-card{
-    margin: 1rem 8px;
     background-color: #fbf4ec;
     border-radius: 10px;
     overflow: hidden;
@@ -616,6 +615,10 @@ button:hover{
     grid-template-columns: 1fr;
     gap: 0.5rem;
     padding: 0.5rem;
+
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto; 
 }
 
 .place-figure {
@@ -624,11 +627,11 @@ button:hover{
 }
 
 .place-img {
-    width: 300px;
-    height: auto;
+    width: 100%;    
+    height: auto; 
     object-fit: cover;
     display: block;
-    margin: 0 auto;
+    border-radius: 8px; 
 }
 
 .place-name {
