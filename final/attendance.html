@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Official wedding website of Javiera & Ángel. Find the date, location, how to attend, and more.">
+  <meta property="og:title" content="Wedding Javiera & Ángel">
+  <meta property="og:description" content="Celebrate with us our big day. Date, location, RSVP and more.">
+  <meta property="og:image" content="images/portada-boda.jpg"> <!-- Featured image -->
+  <meta property="og:url" content="https://JavierayAngel.cl/">
+  <meta name="theme-color" content="#ffffff">
+  <title>RSVP</title>
+  <link rel="stylesheet" href="style/style.css">
+  <script src="js/animation.js" defer></script>
+</head>
+<body class="rsvp-body">
+  <header>
+    <h1>Javiera & Ángel</h1>
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="ceremony.html">Ceremony</a>
+        <a href="reception.html">Reception</a>
+        <a href="attendance.html">Confirm Attendance</a>
+        <a href="playlist.html">Songs</a>
+        <a href="stay.html">Stay</a>
+    </nav>
+  </header>
+
+  <div class="form-container">
+    <h2>RSVP</h2>
+    <p>Please confirm your attendance before September 10.</p>
+    <form id="rsvp-form" action="https://formspree.io/f/mjkrpkpy" method="POST">
+      <label for="nombre">Name:</label>
+      <input type="text" id="nombre" name="nombre" placeholder="Your full name" required aria-required="true">
+    
+      <label for="asistencia">Will you attend?</label>
+      <select id="asistencia" name="asistencia">
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+      </select>
+    
+      <label for="comentarios">Comments:</label>
+      <textarea id="comentarios" name="comentarios" placeholder="Write your comments here..."></textarea>
+    
+      <button type="submit">Send Confirmation</button>
+    </form>
+
+    <!-- Success and error messages -->
+    <div id="success-message" class="success-message">Thank you for confirming your attendance!</div>
+    <div id="error-message" class="error-message">There was a problem submitting the form. Please try again later.</div>
+  </div>
+
+  <!-- Final Message -->
+  <section class="final-message">
+    <h2>We hope to see you there</h2>
+    <p>Questions? Contact us via the WhatsApp button</p>
+    <p>Javiera & Ángel</p>
+  </section>
+
+    <footer>
+        <div class="contact-info">
+            <p><strong>Undertake Together Chamber of Commerce</strong></p>
+            <p>302 Ecuador Street</p>
+            <p>Puerto Lara, Chile</p>
+            <p>info@undertaketogether.org</p>
+            <p>(56) 6534 2699</p>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg" alt="Instagram" width="16" height="16"></a>
+        </div>
+        <div class="personal-info">
+            <p>WDD231 Class Proyect</p>
+            <p>Javiera Lorca</p>
+            <p>© <span id="currentyear"></span> Undertake Together chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>
