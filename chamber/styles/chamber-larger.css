@@ -15,6 +15,10 @@
         width: 300px;    
         height: auto;
     }
+
+    .welcome-message{
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 64rem){
