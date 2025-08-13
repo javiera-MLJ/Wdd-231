@@ -15,32 +15,30 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/responsive-styles.css">
     <meta property="og:site_name" content="Wedding Javiera & Ángel">
-    <link rel="icon" href="images/wedding-logo.ico.png">
+    <link rel="icon" href="images/wedding-logo.ico">
     <script type="module" src="scripts/index.js"></script>
     <title>Wedding Javiera & Ángel Index</title>
 </head>
 <body>
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="overlay"></div>
-        <div class="hero-content">
-            <h1>Javiera & Ángel</h1>
-            <h2>We're getting married!</h2>
-            <div class="info">
-                <p class="date">Saturday, October 11, 2025</p>
-                <p class="main-location">Pob - Mahuzier, Av. Pedro de Valdivia 18, Concepción</p>
+    <header>
+        <section class="hero">
+            <div class="overlay"></div>
+            <div class="hero-content">
+                <h1>Javiera & Ángel</h1>
+                <h2>We're getting married!</h2>
+                <div class="info">
+                    <p class="date">Saturday, October 11, 2025</p>
+                    <p class="main-location">Pob - Mahuzier, Av. Pedro de Valdivia 18, Concepción</p>
+                </div>
             </div>
-        </div>
-    </section>
-    <button id="nav-button" class="hamburger" aria-label="navigation"></button>
-    <nav id="nav-bar" class="navigation">
-        <a href="index.html">Home</a>
-        <a href="ceremony.html">Ceremony</a>
-        <a href="reception.html">Reception</a>
-        <a href="attendance.html">Confirm Attendance</a>
-        <a href="playlist.html">Songs</a>
-        <a href="gifts.html">Gifts</a>
-    </nav>
+        </section>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        <nav id="nav-bar" class="navigation">
+            <a href="index.html">Home</a>
+            <a href="attendance.html">Confirm Attendance</a>
+            <a href="gifts.html">Gifts</a>
+        </nav>
+    </header>
     <!-- Countdown -->
     <section class="countdown-section">
         <h2>Our big day is just around the corner!</h2>
@@ -56,7 +54,17 @@
         <section class="uniform-section fade-in">
             <div class="history-wrapper">
                 <div class="history-image">
-                    <img src="images/our-history.webp" alt="Our Story" loading="lazy">
+                    <img src="images/our-history.webp" alt="Our Story" id="img-w-modal" loading="lazy">
+                            <dialog id="image-details" class="modal">
+                                <div class="modal-content">
+                                    <button id="closeModal" class="close-btn">✕</button>
+                                    <h2>Our Special Day:</h2>
+                                    <div class="venue-info">
+                                        <p>Before deciding to have this big celebration and being able to share our big day with all of us, we wanted to start our life together as a married couple, so we decided to get married through the civil registry and we have beautiful memories of that day in photos just like this image. It was a rewarding, sunny, and beautiful day. Now we want to share this special day all together by deciding to be sealed for eternity in the temple.</p>
+                                        <p><strong>Thank you for choosing to share this day with us. We want to share it with special people in our lives, and you are one of them.</strong><br>
+                                    </div>
+                                </div>
+                            </dialog>
                 </div>
 
                 <div class="history-text">
@@ -68,6 +76,8 @@
                 </div>
             </div>
         </section>
+
+
 
         <!-- Location -->
         <section class="uniform-section fade-in">
@@ -137,7 +147,7 @@
 
     <!-- WhatsApp Button -->
     <a href="https://wa.me/56944848311" class="whatsapp-button" target="_blank">
-        <img src="images/whatsapp-icon.png" alt="WhatsApp" loading="lazy">
+        <img src="images/whatsapp-icon.webp" alt="WhatsApp" loading="lazy">
     </a>
 
     <section class="final-message">

@@ -7,6 +7,7 @@
 
   .info{
     gap: 0.1rem;
+    font-size: 1em;
   }
   h1 {
     font-size: 2.2em;
@@ -48,14 +49,6 @@
     font-size: 3em;
   }
 
-  .info {
-    font-size: 1em;
-  }
-
-  .spotify-playlist iframe {
-    min-height: 250px;
-  }
-
   .countdown {
     flex-direction: column;
     align-items: center;
@@ -74,17 +67,6 @@
 
   .gifts-text,
   .gifts-image {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-
-  .ceremony-image {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .temple-text,
-  .temple-image {
     width: 100%;
     margin-bottom: 20px;
   }
@@ -168,6 +150,42 @@
   .social a:hover {
       background-color: #ddd;
   }
+
+  .gifts-table thead {
+      display: none; 
+  }
+  .gifts-table tbody {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+  }
+  .gifts-table tr {
+      display: flex;
+      flex-direction: column;
+      background: #f9f9f9;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 12px;
+      position: relative;
+  }
+  .gifts-table td {
+      display: flex;
+      justify-content: space-between;
+      padding: 4px 0;
+      font-size: 0.95em;
+  }
+  .gifts-table td::before {
+      content: attr(data-label) ": ";
+      font-weight: bold;
+      color: #333;
+  }
+
+  .gifts-table td:nth-child(1)::before { content: "Gift: "; }
+  .gifts-table td:nth-child(2)::before { content: "Price: "; }
+  .gifts-table td:nth-child(3)::before { content: "Qty Desired: "; }
+  .gifts-table td:nth-child(4)::before { content: "Purchased: "; }
+  .gifts-table td:nth-child(5)::before { content: "Still Needed: "; }
+  .gifts-table td:last-child::before { content: ""; }
 }
 
 @media (min-width: 601px) and (max-width: 900px) {

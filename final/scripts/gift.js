@@ -3,67 +3,105 @@ import { updateCurrentYear, updateLastModified } from './utils.mjs';
 import { initFadeInAnimation } from './animation.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-    initFadeInAnimation(0.2); 
+    initFadeInAnimation(0.2);
     setupNavigation();
     updateCurrentYear();
     updateLastModified();
+    getGiftsData();
 });
 
-const directory = 'data/members.json';
-const cards = document.querySelector('#cards');
-async function getMembersData() {
-    try {
-        const response = await fetch(directory);
-        const data = await response.json();
-        if (!response.ok) throw new Error('Error loading data');
-        displayCompanies(data.companies);
-    } catch (error) {
-        console.error('there was a problem:', error);
+const gifts = 'data/gifts.json';
+const options = document.querySelector('#options');
+
+async function getGiftsData() {
+    let giftsData;
+
+    const saved = localStorage.getItem('weddingGifts');
+    if (saved) {
+        giftsData = JSON.parse(saved);
+    } else {
+        try {
+            const response = await fetch(gifts);
+            if (!response.ok) throw new Error('Error loading data');
+            const data = await response.json();
+            giftsData = data.gifts;
+
+            localStorage.setItem('weddingGifts', JSON.stringify(giftsData));
+        } catch (error) {
+            console.error('There was a problem:', error);
+            options.innerHTML = '<p class="error">Failed to load gifts.</p>';
+            return;
+        }
+    }
+
+    displayOptions(giftsData);
+}
+
+const displayOptions = (gifts) => {
+    const table = document.createElement('table');
+    table.classList.add('gifts-table');
+
+    table.innerHTML = `
+        <thead>
+            <tr>
+                <th>Gift Name</th>
+                <th>Price</th>
+                <th>Quantity Desired</th>
+                <th>Already Purchased</th>
+                <th>Still Needed</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+    `;
+
+    const tbody = document.createElement('tbody');
+    gifts.forEach((gift) => {
+        const needed = Math.max(0, gift.quantity - gift.purchased);
+        const status = needed === 0 ? '✅ Complete' : '🕒 Pending';
+
+        const row = document.createElement('tr');
+
+        row.innerHTML = `
+            <td data-label="Gift">${gift.name}</td>
+            <td data-label="Price">$${gift.price.toFixed(2)}</td>
+            <td data-label="Qty Desired">${gift.quantity}</td>
+            <td data-label="Purchased">${gift.purchased}</td>
+            <td data-label="Still Needed"><strong>${needed}</strong></td>
+            <td data-label="Action">
+                ${needed > 0 
+                    ? `<button class="btn-buy" data-name="${gift.name}">+1 Bought</button>` 
+                    : `<span>✅ Complete</span>`
+                }
+            </td>
+        `;
+        if (needed === 0) {
+            row.classList.add('completed');
+        }
+
+        tbody.appendChild(row);
+    });
+
+    table.appendChild(tbody);
+    options.innerHTML = '';
+    options.appendChild(table);
+
+    document.querySelectorAll('.btn-buy').forEach(button => {
+        button.addEventListener('click', (e) => {
+            const name = e.target.dataset.name;
+            updatePurchaseStatus(name);
+        });
+    });
+};
+
+function updatePurchaseStatus(name) {
+    const gifts = JSON.parse(localStorage.getItem('weddingGifts'));
+
+    const gift = gifts.find(g => g.name === name);
+    if (gift && gift.purchased < gift.quantity) {
+        gift.purchased += 1;
+        localStorage.setItem('weddingGifts', JSON.stringify(gifts));
+        console.log(`+1 for ${name}. Purchased: ${gift.purchased}`);
+        
+        displayOptions(gifts);
     }
 }
-
-const displayCompanies = (companies) => {
-    companies.forEach((company) => {
-        let card = document.createElement('section');
-        let portrait = document.createElement('img');
-        let name = document.createElement('h2');
-        let address = document.createElement('p');
-        let phoneNumber = document.createElement('p');
-        let membership = document.createElement('p');
-        let since = document.createElement('p');
-        let URL = document.createElement('p');
-        let link = document.createElement("a");
-
-        link.href = company.URL;
-        link.textContent = company.URL;
-        link.target = '_blank';
-        link.rel = 'noopener noreferrer';
-        URL.textContent = 'Website: ';
-        URL.appendChild(link);
-
-        name.textContent = `${company.name}`;
-        address.textContent = `Address: ${company.address}`;
-        phoneNumber.textContent = `Phone Number: ${company.phone_number}`;
-        membership.textContent = `Membership Level: ${company.membership}`;
-        since.textContent = `Membership Since: ${company.membership_since}`;
-
-        portrait.setAttribute('src', company.image);
-        portrait.setAttribute('alt', `Portrait of ${company.name}`);
-        portrait.setAttribute('loading', 'lazy');
-        portrait.setAttribute('width', '340');
-
-        card.appendChild(portrait);
-        card.appendChild(name);
-        card.appendChild(address);
-        card.appendChild(phoneNumber);
-        card.appendChild(membership);
-        card.appendChild(since);
-        card.appendChild(URL);
-        
-        cards.appendChild(card);
-    });
-}
-
-const gridbutton = document.querySelector("#grid");
-const listbutton = document.querySelector("#list");
-const display = document.querySelector("#cards");
