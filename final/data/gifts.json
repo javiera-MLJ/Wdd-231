@@ -1,0 +1,92 @@
+[
+    {
+        "name": "Couples' Weekend Getaway",
+        "price": 300,
+        "quantity": 1,
+        "purchased": 0
+    },
+    {
+        "name": "Premium Coffee Maker",
+        "price": 120,
+        "quantity": 1,
+        "purchased": 0
+    },
+    {
+        "name": "Set of Kitchen Knives",
+        "price": 85,
+        "quantity": 2,
+        "purchased": 0
+    },
+    {
+        "name": "Personalized Wedding Frame",
+        "price": 45,
+        "quantity": 3,
+        "purchased": 1
+    },
+    {
+        "name": "Outdoor Dining Set",
+        "price": 200,
+        "quantity": 1,
+        "purchased": 0
+    },
+    {
+        "name": "Blender for Smoothies",
+        "price": 70,
+        "quantity": 1,
+        "purchased": 0
+    },
+    {
+        "name": "Electric Pressure Cooker",
+        "price": 150,
+        "quantity": 2,
+        "purchased": 0
+    },
+    {
+        "name": "Luxury Bed Sheets Set",
+        "price": 90,
+        "quantity": 2,
+        "purchased": 1
+    },
+    {
+        "name": "Smart Home Speaker",
+        "price": 100,
+        "quantity": 1,
+        "purchased": 0
+    },
+    {
+        "name": "Cooking Class for Two",
+        "price": 130,
+        "quantity": 1,
+        "purchased": 0
+    },
+    {
+        "name": "Portable Projector",
+        "price": 180,
+        "quantity": 1,
+        "purchased": 0
+    },
+    {
+        "name": "Travel Luggage Set",
+        "price": 250,
+        "quantity": 1,
+        "purchased": 0
+    },
+    {
+        "name": "Air Fryer",
+        "price": 95,
+        "quantity": 1,
+        "purchased": 0
+    },
+    {
+        "name": "Massage Gift Certificate",
+        "price": 110,
+        "quantity": 2,
+        "purchased": 0
+    },
+    {
+        "name": "Photo Album Book",
+        "price": 60,
+        "quantity": 2,
+        "purchased": 1
+    }
+]

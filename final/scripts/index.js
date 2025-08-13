@@ -1,3 +1,13 @@
+import { setupNavigation } from './navigation.mjs';
+import { updateCurrentYear, updateLastModified } from './utils.mjs';
+import { initFadeInAnimation } from './animation.js';
+
+document.addEventListener('DOMContentLoaded', () => {
+    initFadeInAnimation(0.2); 
+    setupNavigation();
+    updateCurrentYear();
+    updateLastModified();
+});
 
 // === Countdown ===
 const weddingDate = new Date("October 11, 2025 14:00:00").getTime();
@@ -19,16 +29,3 @@ function updateCountdown() {
 }
 updateCountdown();
 setInterval(updateCountdown, 1000);
-// === Scroll animations ===
-const faders = document.querySelectorAll(".fade-in");
-const appearOnScroll = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
-            observer.unobserve(entry.target);
-        }
-    });
-}, { threshold: 0.2 });
-faders.forEach(fader => {
-    appearOnScroll.observe(fader);
-});

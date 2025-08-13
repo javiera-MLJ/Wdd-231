@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Official wedding website of Javiera & Ángel. Find the date, location, how to attend, and more.">
+    <meta name="author" content="Javiera Lorca"/>
     <meta property="og:title" content="Wedding Javiera & Ángel">
     <meta property="og:description" content="Celebrate with us our big day. Date, location, RSVP and more.">
-    <meta property="og:image" content="images/portada-boda.jpg">
-    <meta property="og:url" content="https://JavierayAngel.cl/">
+    <meta property="og:image" content="https://javiera-mlj.github.io/wdd231/final/images/cover-photo.webp">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:url" content="https://javiera-mlj.github.io/wdd231/final/index.html">
+    <meta property="og:type" content="website">
     <meta name="theme-color" content="#ffffff">
-    <title>Ceremony - Javiera & Ángel</title>
-    <link rel="stylesheet" href="style/style.css">
-    <script src="js/animation.js" defer></script>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/responsive-styles.css">
+    <meta property="og:site_name" content="Wedding Javiera & Ángel">
+    <link rel="icon" href="images/wedding-logo.ico.png">
+    <script type="module" src="scripts/decorations.js"></script>
+    <title>Wedding Javiera & Ángel Ceremony</title>
 </head>
 <body>
-
     <header>
-        <h1>Javiera & Ángel</h1>
-        <nav class="navbar">
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        <h1>Ceremony</h1>
+        <nav id="nav-bar" class="navigation">
             <a href="index.html">Home</a>
             <a href="ceremony.html">Ceremony</a>
             <a href="reception.html">Reception</a>
             <a href="attendance.html">Confirm Attendance</a>
             <a href="playlist.html">Songs</a>
-            <a href="stay.html">Stay</a>
+            <a href="gifts.html">Gifts</a>
         </nav>
     </header>
 
@@ -48,13 +54,13 @@
         <!-- Temple image -->
         <section class="uniform-section fade-in">
             <div class="ceremony-image">
-                <div class="templo-text">
+                <div class="temple-text">
                     <p>After the ceremony at the temple:</p>
                     <p>The wedding party will have a photo session. We would greatly appreciate your presence for the first group photos. Afterwards, you may walk to the reception, located just a few blocks from the temple (address available on the homepage).</p>
-                    <p class="importante">It is important that everyone is present at the church by 12:30 PM to welcome the couple at 1:00 PM.</p>
+                    <p class="important">It is important that everyone is present at the church by 12:30 PM to welcome the couple at 1:00 PM.</p>
                 </div>
-                <div class="templo-image">
-                    <img src="images/conce-temple.JPG" alt="Temple where the ceremony will take place">
+                <div class="temple-image">
+                    <img src="images/conce-temple.webp" alt="Temple where the ceremony will take place" loading="lazy">
                 </div>
             </div>
         </section>
@@ -80,7 +86,8 @@
                         <p>If you'd like to be an active part of our day, you can travel on Friday and help us decorate or prepare details. Your help will be invaluable, and in return, we offer you free accommodation at the hostel that night.</p>
                         <p>If so, we’d appreciate you filling out the form so we can secure your stay. Please confirm before next Friday, July 4, so we can make the reservation at the hostel.</p>
                         <p><em>You may leave a small tip at the hostel if you wish.</em></p>
-                        <a href="stay.html" class="button">Confirm Stay</a>
+
+                        <a href="https://wa.me/56944848311" class="button">Confirm Stay</a>
                     </div>
                 </div>
 
@@ -98,7 +105,7 @@
     </main>
     <!-- WhatsApp Button -->
     <a href="https://wa.me/56944848311" class="whatsapp-button" target="_blank">
-        <img src="images/whatsapp-icon.png" alt="WhatsApp">
+        <img src="images/whatsapp-icon.png" alt="WhatsApp" loading="lazy">
     </a>
 
         <!-- Final Message -->
@@ -109,21 +116,16 @@
     </section>
 
     <footer>
-        <div class="contact-info">
-            <p><strong>Undertake Together Chamber of Commerce</strong></p>
-            <p>302 Ecuador Street</p>
-            <p>Puerto Lara, Chile</p>
-            <p>info@undertaketogether.org</p>
-            <p>(56) 6534 2699</p>
-        </div>
-        <div class="social">
-            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
-            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg" alt="Instagram" width="16" height="16"></a>
-        </div>
         <div class="personal-info">
             <p>WDD231 Class Proyect</p>
             <p>Javiera Lorca</p>
-            <p>© <span id="currentyear"></span> Undertake Together chamber of Commerce</p>
+        </div>
+        <div class="social">
+            <a href="https://facebook.com" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16" loading="lazy"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.svg" alt="Instagram" width="16" height="16" loading="lazy"></a>
+        </div>
+        <div class="lastmodified">
+            <p>© <span id="currentyear"></span> <strong>Javiera & Angel Weeding</strong></p>
             <p id="lastModified"></p>
         </div>
     </footer>
