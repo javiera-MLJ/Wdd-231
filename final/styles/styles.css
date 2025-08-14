@@ -332,7 +332,6 @@ footer {
     gap: 40px; 
     padding: 40px 60px;
     font-family: Arial, sans-serif;
-    background-color: white;
 }
 
 .personal-info,
@@ -346,13 +345,9 @@ footer {
     margin: 1rem;
 }
 
-.social {
-    gap: 15px;
-    align-items: center;
-}
-
 .social img {
     width: 33px;
+    margin: .5rem;
     transition: transform 0.3s ease;
 }
 
