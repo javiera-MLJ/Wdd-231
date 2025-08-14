@@ -293,7 +293,6 @@ a.button:hover {
     color: #663366;
 }
 
-
 footer {
     display: flex;
     justify-content: space-between; 
@@ -302,6 +301,7 @@ footer {
     gap: 40px; 
     padding: 40px 60px;
     font-family: Arial, sans-serif;
+    background-color: #ffffff;
 }
 
 .personal-info,
@@ -339,6 +339,7 @@ h1 {
     font-weight: 700;
     line-height: 1.2;
     color: var(--accent-color);
+    padding: 10px
 }
 
 .gifts-table {

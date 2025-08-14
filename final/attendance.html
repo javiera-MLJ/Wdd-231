@@ -26,7 +26,6 @@
     <img src="images/form.webp" alt="form image" loading="lazy" class="rsvp-background">
     <header class="header-option">
         <button id="nav-button" class="hamburger" aria-label="navigation"></button>
-        <h1>Attendance</h1>
         <nav id="nav-bar" class="navigation">
                 <a href="index.html">Home</a>
                 <a href="attendance.html">Confirm Attendance</a>
@@ -34,39 +33,40 @@
         </nav>
     </header>
 
-    <div class="form-container">
-        <h2>confirmation</h2>
-        <p>Please confirm your attendance before September 10.</p>
-        <form id="rsvp-form" action="https://formspree.io/f/mjkrpkpy" method="POST">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" placeholder="Your full name" required aria-required="true">
-            
-            <label for="attendance">Will you attend?</label>
-            <select id="attendance" name="attendance">
-                <option value="Yes">Yes</option>
-                <option value="No">No</option>
-            </select>
+    <main>
+        <div class="form-container">
+            <h1>Attendance</h1>
+            <p>Please confirm your attendance before September 10.</p>
+            <form id="rsvp-form" action="https://formspree.io/f/mjkrpkpy" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your full name" required aria-required="true">
 
-            <label for="comments">Comments:</label>
-            <textarea id="comments" name="comments" placeholder="Write your comments here..."></textarea>
+                <label for="attendance">Will you attend?</label>
+                <select id="attendance" name="attendance">
+                    <option value="Yes">Yes</option>
+                    <option value="No">No</option>
+                </select>
 
-            <button type="submit" class="button">Send Confirmation</button>
+                <label for="comments">Comments:</label>
+                <textarea id="comments" name="comments" placeholder="Write your comments here..."></textarea>
 
-            <input type="hidden" name="timestamp" id="form-timestamp">
-        </form>
+                <button type="submit" class="button">Send Confirmation</button>
 
-        <!-- Success and error messages -->
-        <div id="success-message" class="success-message">Thank you for confirming your attendance!</div>
-        <div id="error-message" class="error-message">There was a problem submitting the form. Please try again later.</div>
-    </div>
+                <input type="hidden" name="timestamp" id="form-timestamp">
+            </form>
 
-    <!-- Final Message -->
-    <section class="final-message">
-        <h2>We hope to see you there</h2>
-        <p>Questions? Contact us via the WhatsApp button</p>
-        <p>Javiera & Ángel</p>
-    </section>
+            <!-- Success and error messages -->
+            <div id="success-message" class="success-message">Thank you for confirming your attendance!</div>
+            <div id="error-message" class="error-message">There was a problem submitting the form. Please try again later.</div>
+        </div>
 
+        <!-- Final Message -->
+        <section class="final-message">
+            <h2>We hope to see you there</h2>
+            <p>Questions? Contact us via the WhatsApp button</p>
+            <p>Javiera & Ángel</p>
+        </section>
+    </main>
     <footer>
         <div class="personal-info">
             <p>WDD231 Class Proyect</p>
