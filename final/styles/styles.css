@@ -29,7 +29,7 @@ html {
 
 
 section h2 {
-    font-size: 3em;
+    font-size: 2em;
     color: #663366;
     margin-bottom: 0.5em;
     font-family: "Edu NSW ACT Cursive", cursive;
@@ -252,28 +252,13 @@ a.button:hover {
     margin-bottom: 3em;
 }
 
-.info {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 1em;
-    font-size: 1.5em;
-    color: rgba(0, 0, 0, 0.7);
-}
-
 .date,
 .main-location {
     flex: 1;
     min-width: 200px;
-    font-size: 1.5em;
-}
-
-.date {
-    text-align: left;
-}
-
-.main-location {
-    text-align: right;
+    font-size: 1.8em;
+    color: #212020;
+    text-align: center;
 }
 
 .history-wrapper {
@@ -283,19 +268,6 @@ a.button:hover {
     align-items: center;
     gap: 3em;
     background-color: var(--color1);
-}
-
-.history-image,
-.history-text {
-    flex: 1;
-    min-width: 280px;
-}
-
-.history-image img {
-    width: 400px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 .history-text {
@@ -315,11 +287,6 @@ a.button:hover {
     color: var(--text-color);
 }
 
-.uniform-section h2 {
-    color: var(--accent-color);
-    margin-bottom: 1em;
-}
-
 .uniform-section:nth-child(even) {
     background-color: var(--color2);
 }
@@ -327,6 +294,18 @@ a.button:hover {
 .uniform-section:nth-child(odd) {
     background-color: var(--color1);
 }
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 
 .location-wrapper {
     display: flex;
@@ -336,23 +315,6 @@ a.button:hover {
     max-width: 1000px;
     margin: auto;
     gap: 2em;
-}
-
-.location-info {
-    flex: 1;
-    text-align: left;
-    min-width: 250px;
-}
-
-
-.location-image {
-    flex: 1;
-    min-width: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 12px;
-    overflow: hidden;
 }
 
 .location-image img {
@@ -371,41 +333,22 @@ a.button:hover {
     max-width: 1100px; 
 }
 
-
 .gifts-text {
     width: calc(50% - 80px);
     text-align: justify;
 }
 
-
 .gifts-image {
     width: calc(50% - 20px);
 }
 
-
-.gifts-img {
+.gifts-image img{
     max-width: 100%;
     height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: block;
+    margin: 0 auto; 
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-select {
-    width: 100%;
-    padding: 10px;
-    font-size: 1em;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-}
 
 /* === FINAL MESSAGE === */
 .final-message {
@@ -413,12 +356,6 @@ select {
     padding: 4em 1em 2em;
     background-color: #fff0f5;
     border-top: 1px solid #eee;
-    color: #663366;
-}
-
-.final-message h2 {
-    font-size: 2.2em;
-    margin-bottom: 0.5em;
     color: #663366;
 }
 
@@ -447,12 +384,7 @@ footer {
     min-width: 250px; 
     display: flex;
     flex-direction: column;
-}
-
-.personal-info p,
-.social p,
-.lastmodified p {
-    margin-bottom: 10px;
+    margin: 1rem;
 }
 
 .social {
@@ -503,46 +435,6 @@ footer {
     transform: scale(1.1);
 }
 
-.fade-in {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.8s ease-out;
-}
-
-.fade-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        transform: translateY(40px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 0 auto; 
-}
-
-.option {
-    display: flex;
-    align-items: flex-start;
-    gap: 1em;
-}
-
-section h1 {
-    font-size: 2rem ;
-}
-
 h1 {
     font-size: 2.5rem;
     font-weight: 700;
@@ -574,16 +466,6 @@ h1 {
     text-transform: uppercase;
     font-size: 0.9em;
 }
-
-.gifts-table td {
-    background-color: #fafafa;
-}
-
-.gifts-table td strong {
-    color: var(--accent-color);
-    font-weight: 700;
-}
-
 
 .modal {
     position: absolute;
@@ -618,25 +500,6 @@ h1 {
     overflow-y: auto;
 }
 
-.modal-content h2 {
-    color: var(--accent-color);
-    margin-bottom: 16px;
-    font-size: 1.5em;
-}
-
-.venue-info {
-    text-align: left;
-    font-size: 0.95em;
-    color: #555;
-}
-
-.venue-info p {
-    margin-bottom: 16px;
-}
-
-.venue-info strong {
-    color: #333;
-}
 .close-btn {
     position: absolute;
     top: 12px;
