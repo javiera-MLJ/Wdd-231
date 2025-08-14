@@ -1,9 +1,6 @@
 @media (max-width: 600px) {
 
-  .date, .main-location{
-    text-align: center;
-    margin-bottom: 0.5rem;
-  }
+
 
   .form-container {
   margin: 2em 1em;
@@ -75,9 +72,13 @@
     gap: 15px;
   }
 
-  .social a{
-    padding: 1rem;
-  }
+  footer a {
+    display: inline-block;
+    padding: 10px;
+    min-width: 44px;
+    min-height: 44px;
+}
+
 
   .gifts-table thead {
       display: none; 
