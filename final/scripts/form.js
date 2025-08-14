@@ -16,7 +16,6 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', function (e) {
         e.preventDefault();
 
-        // 1. Guardar datos en sessionStorage (para mostrar después)
         const name = document.getElementById('name').value;
         const attendance = document.getElementById('attendance').value;
         const comments = document.getElementById('comments').value;
@@ -25,7 +24,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const formData = { name, attendance, comments, timestamp };
         sessionStorage.setItem('rsvpConfirmation', JSON.stringify(formData));
 
-        // 2. Enviar a Formspree
         const formDataToSend = new FormData(form);
 
         fetch(form.action, {
@@ -35,7 +33,6 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .then(response => {
             if (response.ok) {
-                // 3. Redirigir a la página de confirmación
                 window.location.href = 'confirmed-reservation.html';
             } else {
                 throw new Error('Submission failed');

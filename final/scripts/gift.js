@@ -69,7 +69,7 @@ const displayOptions = (gifts) => {
             <td data-label="Still Needed"><strong>${needed}</strong></td>
             <td data-label="Action">
                 ${needed > 0 
-                    ? `<button class="btn-buy" data-name="${gift.name}">+1 Bought</button>` 
+                    ? `<button class="button" data-name="${gift.name}">+1 Bought</button>` 
                     : `<span>✅ Complete</span>`
                 }
             </td>
