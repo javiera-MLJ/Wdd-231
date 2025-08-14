@@ -293,11 +293,6 @@ a.button:hover {
     color: #663366;
 }
 
-.final-message p {
-    font-style: italic;
-    color: #96097d;
-    font-size: 1.2rem;
-}
 
 footer {
     display: flex;
