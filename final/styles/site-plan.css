@@ -1,0 +1,42 @@
+:root {
+    --color1: #fff0f5;
+    --color2: #fffdfb;
+    --text-color: #5a3b3f;
+    --accent-color: #663366;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h2 {
+    font-size: 2em;
+    color: #5a3b3f;
+    margin-bottom: 0.5em;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-weight: 600;
+}
+
+h1{
+    font-size: 2em;
+    color: #5a3b3f;
+    margin-bottom: 0.5em;
+    font-family: "Edu NSW ACT Cursive", cursive;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 1em;
+    font-size: 1.3em;
+}
+
+body {
+    text-align: center;
+    padding: 4em 2em;
+    font-family: 'Georgia', serif;
+    color: var(--text-color);
+    background-color: var(--color1);
+}

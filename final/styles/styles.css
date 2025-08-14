@@ -240,8 +240,8 @@ a.button:hover {
 .history-text {
     max-width: 600px;
     text-align: left;
-    padding: 0 2em;
-    font-size: 1.4em;
+    padding: 2em;
+    font-size: 1.2em;
     line-height: 1.8;
     color: #5a3b3f;
 }

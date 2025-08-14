@@ -67,7 +67,7 @@ const displayOptions = (gifts) => {
             <td data-label="Still Needed"><strong>${needed}</strong></td>
             <td data-label="Action">
                 ${needed > 0 
-                    ? `<button class="button" data-name="${gift.name}">+1 Bought</button>` 
+                    ? `<button class="button" id="btn-buy" data-name="${gift.name}">+1 Bought</button>` 
                     : `<span>✅ Complete</span>`
                 }
             </td>
@@ -83,7 +83,7 @@ const displayOptions = (gifts) => {
     options.innerHTML = '';
     options.appendChild(table);
 
-    document.querySelectorAll('.btn-buy').forEach(button => {
+    document.querySelectorAll('#btn-buy').forEach(button => {
         button.addEventListener('click', (e) => {
             const name = e.target.dataset.name;
             updatePurchaseStatus(name);
