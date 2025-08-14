@@ -24,8 +24,7 @@
 
 /* === MAIN CONTENT === */
 
-
-section h2 {
+h2 {
     font-size: 2em;
     color: #663366;
     margin-bottom: 0.5em;
@@ -146,13 +145,6 @@ a.button:hover {
     z-index: 1;
 }
 
-.form-container h2 {
-    color: #663366;
-    margin-bottom: 1em;
-    text-align: center;
-    font-size: 1.5em;
-}
-
 
 .form-container form {
     display: flex;
@@ -160,16 +152,6 @@ a.button:hover {
     gap: 1em;
 }
 
-.form-container form label {
-    display: block;
-    margin-top: 1em;
-    font-weight: bold;
-    color: #813ea7; 
-    font-size: 1em;
-    align-self: flex-start;
-}
-
-/* Campos de entrada */
 .form-container form input,
 .form-container form select,
 .form-container form textarea {
@@ -240,13 +222,6 @@ a.button:hover {
 .hero h1 {
     font-size: 6em !important;
     color: #663366;
-}
-
-.hero h2 {
-    font-weight: 400;
-    font-size: 2.5em;
-    color: #212020;
-    margin-bottom: 3em;
 }
 
 .date,
