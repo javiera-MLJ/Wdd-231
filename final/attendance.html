@@ -16,60 +16,56 @@
     <link rel="stylesheet" href="styles/responsive-styles.css">
     <meta property="og:site_name" content="Wedding Javiera & Ángel">
     <script type="module" src="scripts/form.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&display=swap" rel="stylesheet">
     <link rel="icon" href="images/wedding-logo.ico">
     <title>Wedding Javiera & Ángel Attendance</title>
 </head>
 <body class="rsvp-body">
-  <img src="images/form.webp" alt="form image" loading="lazy" class="rsvp-background">
-  <header class="header-option">
-    <button id="nav-button" class="hamburger" aria-label="navigation"></button>
-    <h1>Attendance</h1>
-    <nav id="nav-bar" class="navigation">
-        <a href="index.html">Home</a>
-        <a href="attendance.html">Confirm Attendance</a>
-        <a href="gifts.html">Gifts</a>
-    </nav>
-  </header>
+    <img src="images/form.webp" alt="form image" loading="lazy" class="rsvp-background">
+    <header class="header-option">
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        <h1>Attendance</h1>
+        <nav id="nav-bar" class="navigation">
+                <a href="index.html">Home</a>
+                <a href="attendance.html">Confirm Attendance</a>
+                <a href="gifts.html">Gifts</a>
+        </nav>
+    </header>
 
-  <div class="form-container">
-    <h2>RSVP</h2>
-    <p>Please confirm your attendance before September 10.</p>
-    <form id="rsvp-form" action="https://formspree.io/f/mjkrpkpy" method="POST">
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" placeholder="Your full name" required aria-required="true">
-    
-      <label for="attendance">Will you attend?</label>
-      <select id="attendance" name="attendance">
-        <option value="Yes">Yes</option>
-        <option value="No">No</option>
-      </select>
-    
-      <label for="comments">Comments:</label>
-      <textarea id="comments" name="comments" placeholder="Write your comments here..."></textarea>
-    
-      <button type="submit" class="button">Send Confirmation</button>
+    <div class="form-container">
+        <h2>RSVP</h2>
+        <p>Please confirm your attendance before September 10.</p>
+        <form id="rsvp-form" action="https://formspree.io/f/mjkrpkpy" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Your full name" required aria-required="true">
+            
+            <label for="attendance">Will you attend?</label>
+            <select id="attendance" name="attendance">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+            </select>
 
-      <input type="hidden" name="timestamp" id="form-timestamp">
-    </form>
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" placeholder="Write your comments here..."></textarea>
 
-    <!-- Success and error messages -->
-    <div id="success-message" class="success-message">Thank you for confirming your attendance!</div>
-    <div id="error-message" class="error-message">There was a problem submitting the form. Please try again later.</div>
-  </div>
+            <button type="submit" class="button">Send Confirmation</button>
 
-  <!-- Final Message -->
+            <input type="hidden" name="timestamp" id="form-timestamp">
+        </form>
+
+        <!-- Success and error messages -->
+        <div id="success-message" class="success-message">Thank you for confirming your attendance!</div>
+        <div id="error-message" class="error-message">There was a problem submitting the form. Please try again later.</div>
+    </div>
+
+    <!-- Final Message -->
     <section class="final-message">
         <h2>We hope to see you there</h2>
         <p>Questions? Contact us via the WhatsApp button</p>
         <p>Javiera & Ángel</p>
     </section>
-
-      <a href="https://wa.me/56944848311" class="whatsapp-button" target="_blank">
-        <img src="images/whatsapp-icon.webp" alt="WhatsApp" loading="lazy">
-    </a>
 
     <footer>
         <div class="personal-info">

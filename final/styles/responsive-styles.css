@@ -49,11 +49,6 @@
     width: 300px;
   }
 
-  .gifts-text,
-  .gifts-image {
-    width: 100%;
-    margin-bottom: 20px;
-  }
 
   .hamburger {
     display: block;
@@ -88,7 +83,6 @@
     margin-bottom: .5rem;
     transition: background-color 0.3s, border-radius 0.3s;
   }
-
 
   footer {
     padding: 0 .4rem;
